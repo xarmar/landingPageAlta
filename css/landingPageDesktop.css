@@ -1,0 +1,160 @@
+/* Outdoor Inpired Colour Palette - src = https://tinyurl.com/2v24zzcn */
+:root {
+    --lightBrown: #7e7060;
+    --brown: #665247;
+    --orange: orange;
+    --light-orange: rgba(255, 166, 0, 0.8);
+    --grey: #c4bbbc;
+    --darkGreen: #3c4c44;
+    --background-light: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-image: url(/images/lisbon.jpeg);
+    background-size: cover;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 3px solid var(--grey);
+    align-items: center;
+}
+
+/* Left Side of Header */
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img {
+    margin-right: 20px;
+}
+
+/* Right Side of Header */
+#navBar {
+    display: flex;
+    flex-direction: row;
+}
+
+.menuItem {
+    margin: 0px 20px 0px 20px;
+}
+
+.navLink {
+    color: white;
+    font-size: 150%;
+    border-bottom: 1px solid transparent;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    color: var(--orange);
+    border-bottom: 1px solid var(--orange);
+}
+
+.menuItem ul {
+    line-height: 30px;
+    height: 0px;
+    list-style: none;
+    overflow: hidden;
+    padding: 0px;
+
+    /*Animation*/
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+   -ms-transition: height 1s ease;
+       transition: height 1s ease;
+}
+
+.menuItem:hover ul {
+    height: 93px;
+  }
+
+.menuItem li {
+    text-align: end;
+    color: white;
+}
+
+.menuItem li:hover {
+    background-color: var(--light-orange);
+}
+
+.menuItem a {
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+#content {
+    padding: 50px;
+    background-color: var(--background-light);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 2% auto 2% auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+#content h1 {
+    font-size: 5.5vw;
+    width: 100%;   
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em; 
+}
+
+#content p {
+    font-size: 2vw;
+    width: 100%;
+}
+
+#content button {
+    padding: 10px;
+    font-size: 1.5vw;
+    margin: 20px auto 0px auto;
+    border-radius: 30px;
+    width: 20%;
+}
+
+#content button:hover {
+    background-color: var(--orange);
+}
+
+/* FOOTER */
+#footer {
+    display: flex;
+    margin-bottom: 0px;
+    position: fixed;
+    height: 5%;
+    width: 99%;
+    background-color: var(--grey);
+    color: black; 
+    text-align: center;
+    bottom: 0;
+    font-size: 20px;
+}
+
+#footer p {
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#footer a {
+    color: inherit;
+}
+
+#footer svg {
+    margin-left: 7px;
+}
