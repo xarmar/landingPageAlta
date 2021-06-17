@@ -94,6 +94,7 @@ header {
   }
 
 .menuItem li {
+    font-family: 'Open Sans', sans-serif;
     font-size: 100%;
     text-align: right;
     color: white;
