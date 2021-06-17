@@ -4,13 +4,12 @@
     --orange: orange;
     --light-orange: rgba(255, 166, 0, 0.8);
     --grey: #c4bbbc;
-    --background-light: rgba(0, 0, 0, 0.4);
+    --background-light: rgba(0, 0, 0, 0.5);
 }
 
 body {
     background-image: url(/images/lisbon.jpeg);
-    background-size: cover;
-    background-repeat: repeat-y;
+    background-position: 23% 42%;
 }
 
 /* HEADER */
@@ -107,7 +106,7 @@ header {
     flex-direction: column;
     justify-content: center;
     color: white;
-    margin: 2% auto 2% auto;
+    margin: 8rem auto 5rem auto;
     max-width: 80%;
     text-align: center;
 }
@@ -127,17 +126,23 @@ header {
 }
 
 #content button {
-    border: 10px dashed var(--orange);
+    background-color: var(--orange);
+    border: 10px dotted transparent;
     font-family: 'Nanum Brush Script', cursive;
     padding: 10px;
-    font-size: 3vw;
+    font-size: 2.5vw;
     margin: 20px auto 0px auto;
-    border-radius: 30px;
+    border-radius: 45px;
     width: 30%;
 }
 
-#content button:hover {
-    background-color: var(--orange)
+#content button a {
+    text-decoration: none;
+    color: black;
+}
+
+#content button:hover { 
+    border: 10px dashed white;
 }
 
 /* FOOTER */
