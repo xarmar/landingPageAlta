@@ -10,7 +10,7 @@
 
 /* Set background image */
 body {
-    background-image: url(/images/lisbon.jpeg);
+    background-image: url(../images/lisbon.jpeg);
     background-position: center;
     background-repeat: repeat-y;
 }
