@@ -4,16 +4,21 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Nanum+Brush+Script&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
         <link href="css/landingPageDesktop.css" rel="stylesheet"> 
+        <link href="css/landingPageMobile.css" rel="stylesheet"> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
         <header>
             <div id="logo">
-                <img src="images/logo.png" width="75px" height="75px">
+                <img src="images/logo.png">
                 <h2> Experience Portugal</h2>
             </div>
-            <nav id="navBar">
+            <nav id="navBar" >
+                <!-- FOR MOBILE MENU-->
+                <label for="toggle-mobile-menu" aria-label="Menu">&#9776;</label>
+                <input id="toggle-mobile-menu" type="checkbox"/>
+                 <!-- MENU -->
                 <div class="menuItem">
                     <p class="navLink">Home</p>
                 </div>
