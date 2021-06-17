@@ -1,0 +1,240 @@
+@media only screen and (max-width: 899px) {
+
+:root {
+    --orange: orange;
+    --light-orange: rgba(255, 166, 0, 0.8);
+    --grey: #c4bbbc;
+    --background-light: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    background-image: url(/images/lisbon.jpeg);
+    background-position: center;
+    background-repeat: repeat-y;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 10px;
+    border-bottom: 3px solid var(--grey);
+    align-items: center;
+}
+
+/* Left Side of Header */
+#logo {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+#logo img {
+    margin-right: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+#logo h2 {
+    visibility: hidden;
+}
+
+
+/* MOBILE NAVBAR */
+#navBar .menuItem,
+#navBar > input {
+    display: none;
+}
+
+#navBar > label {
+    display: block;
+    font-size: 36px;
+    color: var(--orange);
+    position:fixed;
+    right: 20px;
+    width: 36px;
+    padding: 0;
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+#navBar {
+    top: 2%;
+    position: fixed;
+}
+
+#navBar > input:checked ~ .menuItem {
+    max-width: fit-content;
+    right: 10px;
+    margin-top: 60px;
+    display: block;
+    clear: both;
+    position: relative;
+    background: var(--light-orange);
+}
+ /* WORK HERE MORE WORK TO DO HERE TODO TODO TODO TODO */
+input:checked + #navBar {
+    display: flex;
+    flex-direction: column;
+    float: right;
+}
+ 
+#navBar .menuItem {
+    display: block;
+    padding: 12px 0px 12px 0px;
+    margin-right: 40px;
+    font-size: medium;
+}
+
+ 
+#navBar a {
+    text-decoration: none;
+    color: #F6F4F3;
+}
+ 
+#navbar a:hover {
+    text-decoration: none;
+    color: #183059;
+    background-color: #F03A47;
+    padding: 2px;
+    color: #F6F4F3;
+}   
+
+/* Right Side of Header */
+
+.menuItem {
+    margin: 0px 20px 0px 20px;
+}
+
+.navLink {
+    color: transparent;
+    font-size: 150%;
+    border-bottom: 1px solid transparent;
+}
+
+#navBar > input:checked ~ .menuItem p {
+    color: white;
+}
+
+.navLink:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.menuItem ul {
+    line-height: 30px;
+    height: 0px;
+    list-style: none;
+    overflow: hidden;
+    padding: 0px;
+
+    /*Animation*/
+  -webkit-transition: height 1s ease;
+  -moz-transition: height 1s ease;
+    -o-transition: height 1s ease;
+   -ms-transition: height 1s ease;
+       transition: height 1s ease;
+}
+
+.menuItem:hover ul {
+    height: 93px;
+  }
+
+.menuItem li {
+    text-align: end;
+    color: white;
+}
+
+.menuItem li:hover {
+    background-color: var(--light-orange);
+}
+
+.menuItem a {
+    color: white;
+    font-size: 120%;
+    text-decoration: none;
+}
+
+#content {
+    padding: 50px;
+    background-color: var(--background-light);
+    height: 55vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin: 2% auto 2% auto;
+    max-width: 80%;
+    text-align: center;
+}
+
+#content h1 {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 10vw;
+    width: 100%;   
+    margin-block-start: 0.1em;
+    margin-block-end: 0.1em; 
+}
+
+#content p {
+    font-family: 'Nanum Brush Script', cursive;
+    font-size: 6vw;
+    width: 100%;
+}
+
+#content button {
+    border: 1px dashed var(--orange);
+    font-family: 'Nanum Brush Script', cursive;
+    padding: 10px;
+    font-size: 4vw;
+    margin: 20px auto 0px auto;
+    border-radius: 30px;
+    width: 60%;
+}
+
+#content button:hover {
+    background-color: var(--orange)
+}
+
+/* FOOTER */
+#footer {
+    display: flex;
+    margin-bottom: 0px;
+    position: fixed;
+    height: 5%;
+    width: 99%;
+    background-color: var(--grey);
+    color: black; 
+    text-align: center;
+    bottom: 0;
+    font-size: 20px;
+}
+
+#footer p {
+    font-family: 'Open Sans', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#footer a {
+    color: inherit;
+}
+
+#footer a:hover {
+    background-color: var(--light-orange);
+}
+
+#footer svg {
+    margin-left: 7px;
+}
+}
