@@ -59,7 +59,7 @@ header {
     border-bottom: 1px solid transparent;
 }
 
-.navLink:hover {
+.navLink:hover a {
     cursor: pointer;
     color: var(--orange);
     border-bottom: 1px solid var(--orange);
