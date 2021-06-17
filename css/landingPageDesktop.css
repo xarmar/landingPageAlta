@@ -19,7 +19,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    padding: 10px;
+    padding: 5px;
     border-bottom: 3px solid var(--grey);
     align-items: center;
 }
@@ -40,6 +40,7 @@ header {
 
 /* Right Side of Header */
 #navBar {
+    font-size: 90%;
     display: flex;
     flex-direction: row;
 }
@@ -54,10 +55,12 @@ header {
 }
 
 .navLink {
+    font-family: 'Open Sans', sans-serif;
     color: white;
     font-size: 150%;
     border-bottom: 1px solid transparent;
 }
+
 
 .navLink:hover a {
     cursor: pointer;
@@ -164,6 +167,7 @@ header {
 }
 
 #footer p {
+    font-size: 90%;
     font-family: 'Open Sans', sans-serif;
     margin-left: auto;
     margin-right: auto;
