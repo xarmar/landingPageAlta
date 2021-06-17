@@ -1,5 +1,6 @@
 @media only screen and (min-width: 900px) {
 
+/* Set colour variables */
 :root {
     --orange: orange;
     --light-orange: rgba(255, 166, 0, 0.8);
@@ -7,6 +8,7 @@
     --background-light: rgba(0, 0, 0, 0.5);
 }
 
+/* Set background image */
 body {
     background-image: url(/images/lisbon.jpeg);
     background-position: 23% 42%;
@@ -22,7 +24,7 @@ header {
     align-items: center;
 }
 
-/* Left Side of Header */
+/* Left Side of Header - LOGO */ 
 #logo {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -47,7 +49,6 @@ header {
     visibility: hidden;
 }
 
-/* MenuItem */
 .menuItem {
     margin: 0px 20px 0px 20px;
 }
@@ -79,12 +80,13 @@ header {
        transition: height 1s ease;
 }
 
+/* Dropdown effect on hover */
 .menuItem:hover ul {
     height: 60px;
   }
 
 .menuItem li {
-    text-align: center;
+    text-align: right;
     color: white;
 }
 
@@ -98,6 +100,7 @@ header {
     text-decoration: none;
 }
 
+/* CONTENT DIV */
 #content {
     padding: 50px;
     background-color: var(--background-light);
@@ -136,13 +139,14 @@ header {
     width: 30%;
 }
 
-#content button a {
+#content a button {
     text-decoration: none;
     color: black;
 }
 
 #content button:hover { 
     border: 10px dashed white;
+    cursor: pointer;
 }
 
 /* FOOTER */
