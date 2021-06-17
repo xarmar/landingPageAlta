@@ -1,12 +1,14 @@
 @media only screen and (max-width: 899px) {
 
+/* Set colour variables */
 :root {
     --orange: orange;
     --light-orange: rgba(255, 166, 0, 0.85);
     --grey: #c4bbbc;
-    --background-light: rgba(0, 0, 0, 0.4);
+    --background-light: rgba(0, 0, 0, 0.5);
 }
 
+/* Set background image */
 body {
     background-image: url(/images/lisbon.jpeg);
     background-position: center;
@@ -23,7 +25,7 @@ header {
     align-items: center;
 }
 
-/* Left Side of Header */
+/* Left Side of Header - LOGO */ 
 #logo {
     font-family: 'Open Sans', sans-serif;
     color: white;
@@ -41,11 +43,13 @@ header {
     visibility: hidden;
 }
 
+/* Right Side of Header */
 
 /* MOBILE NAVBAR */
 #navBar .menuItem,
 #navBar > input {
     display: none;
+    visibility: hidden;
 }
 
 #navBar > label {
@@ -73,7 +77,9 @@ header {
     flex-direction: column;
 }
 
+/* WHEN INPUT IS CHECKED, APPLY THIS */
 #navBar > input:checked ~ .menuItem {
+    visibility: visible !important; 
     top: 50px;
     display: block;
     clear: both;
@@ -81,48 +87,43 @@ header {
     background-color: var(--light-orange);
     transition: 1s;
 }
- /* WORK HERE MORE WORK TO DO HERE TODO TODO TODO TODO */
-input:checked + #navBar {
+
+#navBar > input:checked ~ .menuItem p {
+    color: white;
+}
+
+input:checked ~ #navBar{
+    visibility: visible !important; 
     display: flex;
     flex-direction: column;
 }
- 
+
+/* Set padding and margin for each .menuItem */
 #navBar .menuItem {
     display: block;
     padding: 12px 8px 12px 8px;
+    margin: 0px 20px 0px -30px;
     font-size: medium;
 }
-
  
 #navBar a {
     text-decoration: none;
     color: #F6F4F3;
 }
   
-
-/* Right Side of Header */
-
-.menuItem {
-    margin: 0px 20px 0px -30px;
-}
-
 .navLink {
-    color: transparent;
     font-size: 120%;
     border-bottom: 1px solid transparent;
     text-align: center;
 }
 
-#navBar > input:checked ~ .menuItem p {
-    color: white;
-}
-
 .navLink:hover {
     cursor: pointer;
-    border-bottom: 1px solid white;
 }
 
 .menuItem ul {
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
     line-height: 30px;
     height: 0px;
     list-style: none;
@@ -137,18 +138,16 @@ input:checked + #navBar {
        transition: height 1s ease;
 }
 
+/* Dropdown effect on hover and click */
 .menuItem:hover ul, .menuItem:active ul {
-    height: 60px;
+    height: 110px;
     text-align: center;
   }
 
 .menuItem li {
     text-align: center;
     color: white;
-}
-
-.menuItem li:hover {
-    background-color: var(--light-orange);
+    margin-bottom: 10px;
 }
 
 .menuItem a {
@@ -157,6 +156,7 @@ input:checked + #navBar {
     text-decoration: none;
 }
 
+/* CONTENT DIV */
 #content {
     padding: 50px;
     background-color: var(--background-light);
@@ -165,7 +165,7 @@ input:checked + #navBar {
     flex-direction: column;
     justify-content: center;
     color: white;
-    margin: 2% auto 2% auto;
+    margin: 1em auto 1em auto;
     max-width: 80%;
     text-align: center;
 }
@@ -180,22 +180,29 @@ input:checked + #navBar {
 
 #content p {
     font-family: 'Nanum Brush Script', cursive;
-    font-size: 6vw;
+    font-size: 4vw;
     width: 100%;
 }
 
 #content button {
-    border: 1px dashed var(--orange);
+    background-color: var(--orange);
+    border: 12px dotted transparent;
     font-family: 'Nanum Brush Script', cursive;
-    padding: 10px;
+    padding: 4px;
     font-size: 4vw;
     margin: 20px auto 0px auto;
-    border-radius: 30px;
+    border-radius: 45px;
     width: 60%;
 }
 
-#content button:hover {
-    background-color: var(--orange)
+#content a button {
+    text-decoration: none;
+    color: black;
+}
+
+#content button:hover { 
+    border: 10px dashed white;
+    cursor: pointer;
 }
 
 /* FOOTER */
