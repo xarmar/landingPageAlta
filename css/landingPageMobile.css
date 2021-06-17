@@ -2,7 +2,7 @@
 
 :root {
     --orange: orange;
-    --light-orange: rgba(255, 166, 0, 0.8);
+    --light-orange: rgba(255, 166, 0, 0.85);
     --grey: #c4bbbc;
     --background-light: rgba(0, 0, 0, 0.4);
 }
@@ -68,28 +68,28 @@ header {
 #navBar {
     top: 2%;
     position: fixed;
+    left: 85%;
+    display: flex;
+    flex-direction: column;
 }
 
 #navBar > input:checked ~ .menuItem {
-    max-width: fit-content;
-    right: 10px;
-    margin-top: 60px;
+    top: 50px;
     display: block;
     clear: both;
     position: relative;
-    background: var(--light-orange);
+    background-color: var(--light-orange);
+    transition: 1s;
 }
  /* WORK HERE MORE WORK TO DO HERE TODO TODO TODO TODO */
 input:checked + #navBar {
     display: flex;
     flex-direction: column;
-    float: right;
 }
  
 #navBar .menuItem {
     display: block;
-    padding: 12px 0px 12px 0px;
-    margin-right: 40px;
+    padding: 12px 8px 12px 8px;
     font-size: medium;
 }
 
@@ -98,25 +98,19 @@ input:checked + #navBar {
     text-decoration: none;
     color: #F6F4F3;
 }
- 
-#navbar a:hover {
-    text-decoration: none;
-    color: #183059;
-    background-color: #F03A47;
-    padding: 2px;
-    color: #F6F4F3;
-}   
+  
 
 /* Right Side of Header */
 
 .menuItem {
-    margin: 0px 20px 0px 20px;
+    margin: 0px 20px 0px -30px;
 }
 
 .navLink {
     color: transparent;
-    font-size: 150%;
+    font-size: 120%;
     border-bottom: 1px solid transparent;
+    text-align: center;
 }
 
 #navBar > input:checked ~ .menuItem p {
@@ -143,12 +137,13 @@ input:checked + #navBar {
        transition: height 1s ease;
 }
 
-.menuItem:hover ul {
-    height: 93px;
+.menuItem:hover ul, .menuItem:active ul {
+    height: 60px;
+    text-align: center;
   }
 
 .menuItem li {
-    text-align: end;
+    text-align: center;
     color: white;
 }
 
