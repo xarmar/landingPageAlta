@@ -81,7 +81,7 @@ header {
 }
 
 .menuItem:hover ul {
-    height: 93px;
+    height: 60px;
   }
 
 .menuItem li {
