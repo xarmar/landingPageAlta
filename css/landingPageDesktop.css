@@ -106,7 +106,7 @@ header {
     flex-direction: column;
     justify-content: center;
     color: white;
-    margin: 8rem auto 5rem auto;
+    margin: 3em auto 1em auto;
     max-width: 80%;
     text-align: center;
 }
