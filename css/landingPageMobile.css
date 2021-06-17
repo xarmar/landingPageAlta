@@ -160,7 +160,7 @@ input:checked + #navBar {
 #content {
     padding: 50px;
     background-color: var(--background-light);
-    height: 55vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -214,6 +214,7 @@ input:checked + #navBar {
 
 #footer p {
     font-family: 'Open Sans', sans-serif;
+    font-size: 80%;
     margin-left: auto;
     margin-right: auto;
     align-self: center;
