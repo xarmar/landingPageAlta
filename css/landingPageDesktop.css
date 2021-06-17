@@ -26,7 +26,6 @@ header {
 
 /* Left Side of Header - LOGO */ 
 #logo {
-    font-family: 'Open Sans', sans-serif;
     color: white;
     display: flex;
     flex-direction: row;
@@ -38,9 +37,15 @@ header {
     height: 75px;
 }
 
+#logo h2 {
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.4em;
+    font-family: 'Open Sans', sans-serif;    
+}
+
 /* Right Side of Header */
 #navBar {
-    font-size: 90%;
     display: flex;
     flex-direction: row;
 }
@@ -57,7 +62,7 @@ header {
 .navLink {
     font-family: 'Open Sans', sans-serif;
     color: white;
-    font-size: 150%;
+    font-size: 130%;
     border-bottom: 1px solid transparent;
 }
 
@@ -89,6 +94,7 @@ header {
   }
 
 .menuItem li {
+    font-size: 100%;
     text-align: right;
     color: white;
 }
@@ -112,7 +118,7 @@ header {
     flex-direction: column;
     justify-content: center;
     color: white;
-    margin: 3em auto 1em auto;
+    margin: 2em auto 1em auto;
     max-width: 80%;
     text-align: center;
 }
